@@ -35,6 +35,7 @@ To authenticate with the container registry, replace the REGISTRY_NAME in the fo
 ```
 az acr login --name REGISTRY_NAME
 ```
+az acr login --name devopsupskillregistryfzcev 
 
 It should so something similar to:
 
@@ -51,6 +52,7 @@ You can tag the image you built in step 2 with a new tag for your container regi
 ```
 docker tag devops-bookstore-api:1.0 REGISTRY_NAME.azurecr.io/devopsupskill/devops-bookstore-api:1.0
 ```
+docker tag devops-bookstore-api:1.0 devopsupskillregistryfzcev.azurecr.io/devopsupskill/devops-bookstore-api:1.0
 
 You can see your Docker images by running `docker images` and you should see your tagged version.
 
@@ -63,6 +65,7 @@ Remember the registry name will be slightly different to the example shown below
 ```
 docker push REGISTRY_NAME.azurecr.io/devopsupskill/devops-bookstore-api:1.0
 ```
+docker push devopsupskillregistryfzcev.azurecr.io/devopsupskill/devops-bookstore-api:1.0
 
 If all works you should see it show progress of your "push"
 

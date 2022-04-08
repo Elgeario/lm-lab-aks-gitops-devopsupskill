@@ -179,6 +179,8 @@ Once its done you'll have a your Kubernetes cluster all ready to go!!!
 
 **NOTE:** Make a note of the value for your **acr_registry_name** because you'll need that in a moment.
 
+<!-- devopsupskillregistrynhqqp -->
+
 ### Step 9 - Configure your **kube control** 
 
 **kubectl** is used to issue actions on our cluster.
